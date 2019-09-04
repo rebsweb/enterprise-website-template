@@ -271,6 +271,8 @@ ul, li {
 	color: #FFFFFF;
 }
 
+
+/*------------------------Hamburger Menu-------------------------------*/
 .hamburger_container {
 	display: none;
 	cursor: pointer;
@@ -374,6 +376,7 @@ ul, li {
 
 .fs_menu_container.active {
 	top: 0;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .fs_menu_list {
@@ -400,6 +403,21 @@ ul, li {
 	-ms-transition: all 600ms 600ms cubic-bezier(.19,1,.22,1);
 	-o-transition: all 600ms 600ms cubic-bezier(.19,1,.22,1);
 	transition: all 1600ms cubic-bezier(.19,1,.22,1);
+}
+
+.fs_menu_list li:first-child a {transition-delay: 600ms;}
+.fs_menu_list li:nth-child(2) a {transition-delay: 670ms;}
+.fs_menu_list li:nth-child(3) a {transition-delay: 740ms;}
+.fs_menu_list li:nth-child(4) a {transition-delay: 810ms;}
+.fs_menu_list li:nth-child(5) a {transition-delay: 880ms;}
+.fs_menu_list li:nth-child(6) a {transition-delay: 950ms;}
+.fs_menu_list li:nth-child(7) a {transition-delay: 900ms;}
+.fs_menu_list li:nth-child(8) a {transition-delay: 950ms;}
+.fs_menu_list li:nth-child(9) a {transition-delay: 1000ms;}
+.fs_menu_list li:nth-child(10) a {transition-delay: 1050ms;}
+
+.fs_menu_container.active .fs_menu_list li a {
+	transform: none;
 }
 
 .fs_menu_list li a span {
@@ -642,6 +660,22 @@ input[type=text], input[type=password] {
 	left: calc(100% + 70px);
 }
 
+.back_button {
+	background-color: rgba(255, 66, 0, 0.7);
+	width: 60px;
+	height: 35px;
+	position: fixed;
+	bottom: 0px;
+	right: 60px;
+	text-align: center;
+	z-index: 10;
+}
+
+.fa-angle-up { 
+	color:#fff;
+	font-size: 30px;
+}
+
 
 /*------------------------Footer-------------------------------*/
 .footer {
@@ -710,17 +744,23 @@ input[type=text], input[type=password] {
 	.nav_items li {
 		margin-left: 0px;
 	}
+
+	.footer {
+		height: 150px;
+	}
 }
 
 @media (max-width: 821px)
 {
-	.main_nav
-	{
+	.back_button {
+		right: 5px;
+	}
+
+	.main_nav {
 		display: none;
 	}
 
-	.hamburger_container
-	{
+	.hamburger_container {
 		display: block;
 	}
 }
@@ -728,5 +768,37 @@ input[type=text], input[type=password] {
 
 @media (max-width: 600px)
 {
+	.section_title h2 {
+		width: 100%;
+	}
+
+	.container_register {
+		width: auto;
+	}
+
+	.footer {
+		height: 200px;
+	}
+
+	.footer_container {
+		padding: 0px;
+	}
+
+	.row.footer_content {
+		height: 100%;
+	}
+
+	.footer_row {
+		margin-top: 0px;
+	}
+	
+	.footer_social {
+		padding: 0px;
+	}
+
+	.footer-link {
+		float: none;
+		margin: 0px;
+	}
 	
 }

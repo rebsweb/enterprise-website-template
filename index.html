@@ -16,7 +16,7 @@
 
 <body>
 
-	<div class="over-site-header">
+	<div id="top" class="over-site-header">
 	  <h1>beasy------------</h1>
 	  <p>------------------------------</p>
 	  <img ... />
@@ -85,7 +85,9 @@
 				<!-- Hamburger Menu -->
 				<div class="fs_menu_overlay">
 				</div>
+
 				<div class="fs_menu_container">
+					
 					<nav class="fs_menu_nav">
 						<ul class="fs_menu_list">
 							<li>
@@ -111,15 +113,7 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="fs_social_container d-flex flex-row justify-content-end align-items-center">
-						<ul class="fs_social">
-							<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-							<a href="#" class="google"><i class="fa fa-google"></i></a>
-							<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-							<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-						</ul>
-					</div>
+
 				</div> <!-- End Hamburger Menu -->
 
 
@@ -138,7 +132,7 @@
 
 		<div class="mySlides fade">
 			<img src="images/slider1.jpg" alt=""/>
-			<h2>Do you need <span>help</span> with your business organization?</h2>  
+			<h2 id=>Do you need <span>help</span> with your business organization?</h2>  
 			<span id="slider-text" class="subline">Beasy is an office management system using the Zend Framework and will assist you with your administrative organization!</span>
 		</div>
 	  
@@ -151,7 +145,7 @@
 		<div class="mySlides fade">
 			<img src="images/slider3.jpg" alt=""/>
 			<h2>Simple</span> administration with beasy</h2>  
-			<span class="subline slider_text">Suitable for every kind of document. With overview of your document status and dunning control.</span>
+			<span class="subline">Suitable for every kind of document. With overview of your document status and dunning control.</span>
 		</div>
 	  
 		<div class="mySlides fade">
@@ -169,7 +163,7 @@
 		<div class="mySlides fade">
 			<img src="images/slider6.jpg" alt=""/>
 			<h2>Beasy also <span>manages</span> your accounting</h2>  
-			<span class="subline slider_text">Your accountant has less work. And you save money.</span>
+			<span class="subline">Your accountant has less work. And you save money.</span>
 		</div>
 	  
 		<a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -247,7 +241,7 @@
 
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3 text-center section_title">
-					<h2>How beasy can assist you
+					<h2 class="section_title_about">How beasy can assist you
 					</h2>
 				</div>
 			</div>
@@ -588,9 +582,11 @@
 
 	<!-- Contact -->
 	<div class="contact">
+
 		<div class="contact_background">
 			<img src="images/bild3.jpg">
 		</div>
+
 		<div class="container container_contact">
 
 			<div class="row">
@@ -610,7 +606,16 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="row row_back">
+				<div class="back_button">
+					<a href="index.html#top"><i class="fa fa-angle-up"></i></a>
+				</div>
+			</div>
+	
+
 		</div>
+
 	</div> <!-- End Contact -->
 
 
@@ -652,8 +657,10 @@
 
 </body>
 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/java.js"></script>
+
 
 </html>
